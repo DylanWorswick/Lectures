@@ -6,13 +6,13 @@
 
 #include<string>
 #include<iostream>
-
+/*
 #include"Vehicle.cpp"
 #include"ParkingLot.cpp"
 #include"Car.cpp"
 #include"Bus.cpp"
 #include"Motorbike.cpp"
-
+*/
 int main(){
     ParkingLot p1(10);
     for(int i=0;i<10;i++){
