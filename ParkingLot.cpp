@@ -6,6 +6,11 @@ ParkingLot::ParkingLot(int n_max_park) {
     currentPark=0;
     vehicles=new Vehicle*[n_max_park];
 }
+ParkingLot::ParkingLot() {
+    max_park=0;
+    currentPark=0;
+    vehicles=new Vehicle*[0];
+}
 
 int ParkingLot::getCount() { 
     return (currentPark);
