@@ -8,10 +8,10 @@ class ParkingLot{
         Vehicle** vehicles;
     public:
         ParkingLot(int n_max_park);
-        int getCount();
-        int getMaxPark();
-        void parkVehicle(Vehicle* v_park);
-        void unparkVehicle(int n_ID);
-        int countOverstayingVehicles(int maxParkingDuration);
+        virtual int getCount();
+        virtual int getMaxPark();
+        virtual void parkVehicle(Vehicle* v_park);
+        virtual void unparkVehicle(int n_ID);
+        virtual int countOverstayingVehicles(int maxParkingDuration);
 
 };
