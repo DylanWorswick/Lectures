@@ -58,9 +58,9 @@ int main(){
     p1.parkVehicle(v3);
     */
     //std::cout<<p1.getCount();
-    int IDRemove=22;
+    //int IDRemove=22;
     //std::cin>>IDRemove;
-    p1.unparkVehicle(IDRemove);
+    p1.unparkVehicle(10);
 
     return 0;
 }
