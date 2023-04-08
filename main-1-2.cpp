@@ -22,7 +22,7 @@ int main(){
     //while(){
     //int iNumber_parked=2;
     
-    //for(int i=0;i<iNumber_parked;i++){
+    for(int i=0;i<10;i++){
         std::string typeOfVehicle;
         std::cout<<"what type of vehicle to park: ";
         std::cin>>typeOfVehicle;
@@ -45,7 +45,7 @@ int main(){
         //
         
         
-   // }
+   }
      //Vehicle* v1=new Bus(1);
      //p1.parkVehicle(v1);
     /*
@@ -61,6 +61,7 @@ int main(){
     //int IDRemove=22;
     //std::cin>>IDRemove;
     p1.unparkVehicle(10);
+   
 
     return 0;
 }
