@@ -6,13 +6,13 @@
 
 #include<string>
 #include<iostream>
-
+/*
 #include "Vehicle.cpp"
 #include"ParkingLot.cpp"
 #include"Car.cpp"
 #include"Bus.cpp"
 #include"Motorbike.cpp"
-
+*/
 
 int main(){
     int num_vehicles=3;
