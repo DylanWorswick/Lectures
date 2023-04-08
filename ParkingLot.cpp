@@ -32,14 +32,20 @@ void ParkingLot::parkVehicle(Vehicle* v_park) {
 }
 
 void ParkingLot::unparkVehicle(int n_ID) {
+    int count =0;
     for(int i=0;i<currentPark;i++){
         if(vehicles[i]->getID()==n_ID){
             //vehicles[i]=nullptr;
+            //std::cout<<"TEST";
             currentPark--;
-            return;
+            count++;
+            
         }
+        //std::cout<<vehicles[i]->getID();
     }
+    if(count==0){
     std::cout<<"Vehicle not in the lot"<<std::endl;
+    }
 }
 
 int ParkingLot::countOverstayingVehicles(int maxParkingDuration) {

@@ -6,40 +6,40 @@
 
 #include<string>
 #include<iostream>
-/*
+
 #include "Vehicle.cpp"
 #include"ParkingLot.cpp"
 #include"Car.cpp"
 #include"Bus.cpp"
 #include"Motorbike.cpp"
-*/
+
 
 int main(){
     
-    ParkingLot p1(10);
+    ParkingLot p1(4);
     //bool flag=true;
     //int i=0;
     //while(){
     //int iNumber_parked=2;
     
-    for(int i=0;i<10;i++){
+    for(int i=0;i<4;i++){
         std::string typeOfVehicle;
         std::cout<<"what type of vehicle to park: ";
         std::cin>>typeOfVehicle;
         
         if(typeOfVehicle=="car"||typeOfVehicle=="Car"){
-            Vehicle* v=new Car(0);
+            Vehicle* v=new Car(i);
             p1.parkVehicle(v);
         }else if(typeOfVehicle=="bus"||typeOfVehicle=="Bus"){
-            Vehicle* v=new Bus(0);
+            Vehicle* v=new Bus(i);
             p1.parkVehicle(v);
              //std::cout<<"bus"<<std::endl;
         }else if(typeOfVehicle=="Motorbike"||typeOfVehicle=="MotorBike"||typeOfVehicle=="Motor bike"||typeOfVehicle=="Motor Bike"||typeOfVehicle=="motorbike"){
-            Vehicle* v=new Motorbike(0);
+            Vehicle* v=new Motorbike(i);
             p1.parkVehicle(v);
             //std::cout<<"Bike"<<std::endl;
         }else{
-            Vehicle* v=new Vehicle();
+            Vehicle* v=new Vehicle(i);
             p1.parkVehicle(v);
         }
         //
@@ -60,7 +60,7 @@ int main(){
     //std::cout<<p1.getCount();
     //int IDRemove=22;
     //std::cin>>IDRemove;
-    p1.unparkVehicle(10);
+    p1.unparkVehicle(1);
    
 
     return 0;
