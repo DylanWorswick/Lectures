@@ -50,7 +50,9 @@ void ParkingLot::unparkVehicle(int n_ID) {
     std::cout<<"Vehicle not in the lot"<<std::endl;
     }else{
         currentPark--;
+        vehicles[n_ID]=nullptr;
     }
+
 }
 
 int ParkingLot::countOverstayingVehicles(int maxParkingDuration) {
