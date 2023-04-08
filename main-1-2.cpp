@@ -21,7 +21,7 @@ int main(){
     //int i=0;
     //while(){
     int iNumber_parked=2;
-    /*
+    
     for(int i=0;i<iNumber_parked;i++){
         std::string typeOfVehicle;
         std::cout<<"what type of vehicle to park: ";
@@ -46,7 +46,7 @@ int main(){
         
         
     }
-    */
+    /*
     //std::cout<<"state the ID of a car you would like to remove: ";
     Vehicle* v=new Bus(1);
     p1.parkVehicle(v);
@@ -54,6 +54,7 @@ int main(){
     p1.parkVehicle(v2);
     Vehicle* v3=new Bus(3);
     p1.parkVehicle(v3);
+    */
     //std::cout<<p1.getCount();
     //int IDRemove=22;
     //std::cin>>IDRemove;
