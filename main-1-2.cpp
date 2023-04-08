@@ -6,46 +6,48 @@
 
 #include<string>
 #include<iostream>
-/*
+
 #include "Vehicle.cpp"
 #include"ParkingLot.cpp"
 #include"Car.cpp"
 #include"Bus.cpp"
 #include"Motorbike.cpp"
-*/
+
 
 int main(){
-    int num_vehicles=0;
+    int num_vehicles=3;
     ParkingLot p1(num_vehicles);
     //bool flag=true;
     //int i=0;
     //while(){
-    int iNumber_parked=2;
+    //int iNumber_parked=2;
     
-    for(int i=0;i<iNumber_parked;i++){
+    //for(int i=0;i<iNumber_parked;i++){
         std::string typeOfVehicle;
         std::cout<<"what type of vehicle to park: ";
         std::cin>>typeOfVehicle;
         
         if(typeOfVehicle=="car"||typeOfVehicle=="Car"){
-            Vehicle* v=new Car(i);
+            Vehicle* v=new Car(0);
             p1.parkVehicle(v);
         }else if(typeOfVehicle=="bus"||typeOfVehicle=="Bus"){
-            Vehicle* v=new Bus(i);
+            Vehicle* v=new Bus(0);
             p1.parkVehicle(v);
              //std::cout<<"bus"<<std::endl;
         }else if(typeOfVehicle=="Motorbike"||typeOfVehicle=="MotorBike"||typeOfVehicle=="Motor bike"||typeOfVehicle=="Motor Bike"||typeOfVehicle=="motorbike"){
-            Vehicle* v=new Motorbike(i);
+            Vehicle* v=new Motorbike(0);
             p1.parkVehicle(v);
             //std::cout<<"Bike"<<std::endl;
         }else{
-            Vehicle* v=new Vehicle(i);
+            Vehicle* v=new Vehicle();
             p1.parkVehicle(v);
         }
         //
         
         
-    }
+   // }
+     //Vehicle* v1=new Bus(1);
+     //p1.parkVehicle(v1);
     /*
     //std::cout<<"state the ID of a car you would like to remove: ";
     Vehicle* v=new Bus(1);
@@ -56,9 +58,9 @@ int main(){
     p1.parkVehicle(v3);
     */
     //std::cout<<p1.getCount();
-    //int IDRemove=22;
+    int IDRemove=22;
     //std::cin>>IDRemove;
-    //p1.unparkVehicle(IDRemove);
+    p1.unparkVehicle(IDRemove);
 
     return 0;
 }

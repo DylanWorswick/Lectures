@@ -5,6 +5,7 @@ ParkingLot::ParkingLot(int n_max_park) {
     max_park=n_max_park;
     currentPark=0;
     vehicles=new Vehicle*[n_max_park];
+
 }
 ParkingLot::ParkingLot() {
     max_park=0;
@@ -18,9 +19,11 @@ int ParkingLot::getCount() {
 
 void ParkingLot::parkVehicle(Vehicle* v_park) {
     if(currentPark<max_park){
-        vehicles[currentPark]=v_park;
+        for(int i=0;i<max_park;i++){
+        vehicles[i]=v_park;
         currentPark++;
         //return true;
+        }
     }else{
         std::cout<<"The lot is full"<<std::endl;
         //return false;
