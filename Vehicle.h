@@ -9,9 +9,9 @@ class Vehicle{
     public:
         Vehicle();
         Vehicle(int n_ID);
-         int getID();
-        std::time_t getTimeEntry();
-         int getParkingDuration();
-        void setID(int n_ID);
+        virtual int getID();
+        virtual std::time_t getTimeEntry();
+        virtual int getParkingDuration();
+        virtual void setID(int n_ID);
         
 };
