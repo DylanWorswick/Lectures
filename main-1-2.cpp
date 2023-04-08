@@ -16,7 +16,7 @@
 
 int main(){
     
-    ParkingLot p1(4);
+    ParkingLot p1(10);
     //bool flag=true;
     //int i=0;
     //while(){

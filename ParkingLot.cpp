@@ -35,6 +35,7 @@ void ParkingLot::unparkVehicle(int n_ID) {
     for(int i=0;i<currentPark;i++){
         if(vehicles[i]->getID()==n_ID){
             vehicles[i]=nullptr;
+            currentPark--;
             return;
         }
     }
