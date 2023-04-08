@@ -33,25 +33,27 @@ void ParkingLot::parkVehicle(Vehicle* v_park) {
 
 void ParkingLot::unparkVehicle(int n_ID) {
     int count =0;
-    /*
+    
     for(int i=0;i<currentPark;i++){
         if(vehicles[i]->getID()==n_ID){
-            //vehicles[i]=nullptr;
+            vehicles[i]=nullptr;
             //std::cout<<"TEST";
-            currentPark--;
+            
             count++;
+            for(int j=i;i<currentPark;i++){
+                vehicles[i]=vehicles[i+1];
+            }
+            currentPark--;
             
         }
         //std::cout<<vehicles[i]->getID();
     }
-    */
-
-    if(n_ID>currentPark){
-    std::cout<<"Vehicle not in the lot"<<std::endl;
-    }else{
-        currentPark--;
-        vehicles[n_ID]=nullptr;
+    if(count==0){
+        std::cout<<"Vehicle not in the lot"<<std::endl;
     }
+    
+
+
 
 }
 
